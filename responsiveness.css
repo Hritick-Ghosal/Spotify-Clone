@@ -1,0 +1,77 @@
+/* ===== RESPONSIVE CSS ===== */
+
+/* GRID FIX - auto wrap cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .nav-block a {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .library-block {
+        padding: 10px;
+    }
+
+    .playlist-box {
+        padding: 12px;
+    }
+
+    .main h2 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .player {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .player img {
+        height: 32px;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 420px) {
+
+    .card img {
+        border-radius: 6px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .nav-block a {
+        font-size: 15px;
+    }
+}
